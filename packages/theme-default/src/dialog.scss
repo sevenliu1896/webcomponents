@@ -1,0 +1,77 @@
+@import "mixins/mixins";
+@import "mixins/utils";
+@import "common/var";
+@import "common/popup";
+
+@include b(dialog) {
+    position: relative;
+    margin: 0 auto 50px;
+    background: $--color-white;
+    border-radius: $--border-radius-small;
+    box-shadow: $--dialog-box-shadow;
+    box-sizing: border-box;
+
+    @include e(wrapper) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        margin: 0;
+    }
+
+    @include e(header) {
+        padding: 30px 20px 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include e(title) {
+        font-size: $--dialog-title-font-size;
+        color: $--color-text-primary;
+      }
+    
+      @include e(body) {
+        padding: 25px;
+        color: $--color-text-regular;
+        line-height: $--dialog-line-height;
+        font-size: $--dialog-font-size;
+        min-height: 200px;
+        max-height: 485px;
+        overflow-y: auto;
+      }
+
+      @include e(footer) {
+        padding: 20px 25px;
+        text-align: right;
+        box-sizing: border-box;
+        display: flex;
+
+        @include m(left) {
+            justify-content: flex-start;
+        }
+
+        @include m(center) {
+            justify-content: center;
+        }
+
+        @include m(right) {
+            justify-content: flex-end;
+        }
+      }
+}
+
+.dialog-fade-enter-active, .dialog-fade-leave-active {
+    opacity: 1;
+    transition: all .3s;
+}
+.dialog-fade-enter, .dialog-fade-leave-to {
+    opacity: 0;
+    transform: translateY(-30px)
+}
+.xc-dialog__tips{
+    font-size: 14px;
+    color: #333;
+}

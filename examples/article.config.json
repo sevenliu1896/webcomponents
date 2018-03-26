@@ -1,0 +1,96 @@
+{
+    "文章": [
+        {
+            "desc": "流程相关",
+            "path": "/article",
+            "items": [
+                 {
+                    "desc": "checklist",
+                    "name": "checklist",
+                    "path": "checklist"
+                }
+            ]
+        },
+        {
+            "desc": "编程规范",
+            "path": "/article",
+            "items": [
+                {
+                    "desc": "命名规范",
+                    "name": "naming",
+                    "path": "naming"
+                },
+                {
+                    "desc": "bem",
+                    "name": "bem",
+                    "path": "/article/bem"
+                }
+            ]
+        },
+        {
+            "desc": "前端团队分享",
+            "path": "/article",
+            "items": [
+                {
+                    "desc": "eslint",
+                    "name": "eslint",
+                    "path": "eslint"
+                },
+                {
+                    "desc": "vuex",
+                    "name": "vuex",
+                    "path": "vuex"
+                },
+                {
+                    "desc": "vue-router",
+                    "name": "vue-router",
+                    "path": "vue-router"
+                }
+            ]
+        },
+        {
+            "desc": "业务分享",
+            "path": "/article",
+            "items": [
+                {
+                    "desc": "迅策系统代码库相关",
+                    "name": "code-base",
+                    "path": "code-base"
+                },
+                {
+                    "desc": "现有的live-tunnel",
+                    "name": "live-tunnel-old",
+                    "path": "live-tunnel-old"
+                }
+            ]
+        },
+        {
+            "desc": "H5",
+            "path": "/article",
+            "items": [
+                {
+                    "desc": "H5侧边栏",
+                    "name": "h5menubar",
+                    "path": "h5menubar"
+                }
+            ]
+        },
+        {
+            "desc": "技术预研",
+            "path": "/article",
+            "items": [
+                
+                {
+                    "desc": "预研live-tunnel实时行情",
+                    "name": "live-tunnel",
+                    "path": "live-tunnel"
+                },
+                {
+                    "desc": "文件上传 upload-files",
+                    "name": "upload-files",
+                    "path": "upload-files"
+                }
+            ]
+        }
+    ]
+}

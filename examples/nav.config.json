@@ -1,0 +1,153 @@
+{
+    "简介": [
+        {
+            "path": "/guid",
+            "name": "guid",
+            "desc": "介绍"
+        },
+        {
+            "path": "/",
+            "name": "index",
+            "type": "pages"
+        }
+    ],
+    "功能组件": [
+        {
+            "desc": "已完成",
+            "path": "/component",
+            "items": [
+                {
+                    "desc": "Layout 布局",
+                    "name": "layout",
+                    "path": "/layout"
+                },
+                {
+                    "desc": "TabTop 页签",
+                    "name": "tab-top",
+                    "path": "/tabtop"
+                },
+                {
+                    "desc": "Prompt 提示",
+                    "name": "prompt",
+                    "path": "/prompt"
+                },
+                {
+                    "desc": "Dialog 对话框",
+                    "name": "dialog",
+                    "path": "/dialog"
+                },
+                {
+                    "desc": "Input 输入框",
+                    "name": "input",
+                    "path": "/input"
+                },
+                {
+                    "desc": "Select 选择器",
+                    "name": "select",
+                    "path": "/select"
+                },
+                {
+                    "desc": "Radio 单选框",
+                    "name": "radio",
+                    "path": "/radio"
+                },
+                {
+                    "desc": "CheckBox 多选框",
+                    "name": "checkbox",
+                    "path": "/checkbox"
+                },
+                {
+                    "desc": "Form 表单",
+                    "name": "form",
+                    "path": "/form"
+                }
+            ]
+        },
+        {
+            "desc": "正在开发",
+            "path": "/component",
+            "items": [
+                
+                {
+                    "desc": "Table 表格",
+                    "name": "table",
+                    "path": "/table"
+                },
+                
+                {
+                    "desc": "Button 按钮",
+                    "name": "button",
+                    "path": "/button"
+                },
+                {
+                    "desc": "Tabs 切换",
+                    "name": "tabs",
+                    "path": "/tabs"
+                },
+                {
+                    "desc": "CommonSelect 下拉框",
+                    "name": "common-select",
+                    "path": "/commonSelect"
+                },
+                
+                {
+                    "desc": "loading 加载中",
+                    "name": "loading",
+                    "path": "/loading"
+                },
+                {
+                    "desc": "message 消息提示",
+                    "name": "message",
+                    "path": "/message"
+                }
+            ]
+        },
+        {
+            "desc": "待开发",
+            "path": "/component",
+            "items": [
+                {
+                    "desc": "Message 提醒",
+                    "name": "",
+                    "path": ""
+                }
+            ]
+        }
+    ],
+    "业务组件": [
+        {
+            "desc": "已完成",
+            "path": "/component",
+            "items": [
+                {
+                    "desc": "股票搜索框",
+                    "name": "stock-search",
+                    "path": "/stock-search"
+                },
+                {
+                    "desc": "通用axios",
+                    "name":  "axios",
+                    "path": "/axios"
+                }
+            ]
+        },
+        {
+            "desc": "正在开发",
+            "path": "/component",
+            "items": [
+                {
+                    "desc": "日历选择",
+                    "name": "zebra-date-picker",
+                    "path": "/zebra-date-picker"
+                }
+            ]
+        },
+        {
+            "desc": "待开发",
+            "path": "/component",
+            "items": [
+
+            ]
+        }
+    ]
+}

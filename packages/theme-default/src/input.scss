@@ -1,0 +1,123 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(input) {
+    width: 100%;
+    font-size: $--input-font-size;
+    position: relative;
+    display: inline-block;
+
+    @include e(inner) {
+        width: 100%;
+        height: $--input-height;
+        border-radius: $--input-border-radius;
+        border: $--input-border;
+        outline: none;
+        box-sizing: border-box;
+        font-size: inherit; 
+        line-height: 1;
+        padding: 0 10px;
+        transition: $--border-transition-base;
+        color: $--input-color;
+
+        &::placeholder {
+            color: $--input-placeholder-color;
+        }
+ 
+        &:hover {
+            border: $--input-hover-border;
+        }
+
+        &:focus {
+            border: $--input-focus-border;
+        }    
+    }
+
+    @include e(suffix) {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        padding: 0 10px;
+        text-align: center;
+        color: #c0c4cc;
+        transition: all .3s;
+        pointer-events: none;
+        line-height: 35px;
+    }
+
+    @include when(disabled) {
+        @include e(inner) {
+            background-color: $--input-disabled-fill;
+            border-color: $--input-disabled-border;
+            color: $--input-disabled-color;
+            cursor: not-allowed;
+            
+            &::placeholder {
+              color: $--input-disabled-placeholder-color;
+            }
+        }
+    }
+}
+
+@include b(input-group) {
+    line-height: normal;
+    display: inline-table;
+    width: 100%;
+    border-collapse: separate;
+
+    > .xc-input__inner {
+        vertical-align: middle;
+        display: table-cell;
+    }
+    
+    @include m(append) {
+        .xc-input__inner {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    @include e(append) {
+        border-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+    @include e(append) {
+        background-color: #FFDE00;
+        vertical-align: middle;
+        display: table-cell;
+        position: relative;
+        border: 1px solid #BEBEBE;
+        border-radius: 4px;
+        padding: 0 10px;
+        width: 1px;
+        white-space: nowrap;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 0;
+        
+        &:focus {
+            outline: none;
+        }
+      
+        button.xc-button{
+            border-color: transparent;
+            background-color: transparent;
+            border-top: 0;
+            border-bottom: 0;
+        }
+        .xc-select,
+        .xc-button {
+            display: inline-block;
+            margin: -20px;
+        }
+     }
+
+}
+
+.xc-input__suffix-inner {
+    cursor: pointer;
+    pointer-events: all;
+}
